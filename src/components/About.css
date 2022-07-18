@@ -1,0 +1,38 @@
+.about{
+    color: rgb(249, 250, 250);
+    font-size: large;
+    text-align:left;
+    margin-left: 2%;
+    margin-top: 3%;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+    
+}
+
+.Git{
+
+    border-radius: 33%;
+    
+}
+
+.welcome{
+    color: rgb(249, 250, 250);
+    
+    text-align:left;
+    margin-left: 2%;
+    margin-top: 3%;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: x-large;
+    
+
+}
+
+.img-thumbnail{
+
+    border-radius: 20%;
+    box-shadow: 10;
+    
+    
+}

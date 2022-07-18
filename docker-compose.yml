@@ -1,0 +1,20 @@
+version: '3'
+services:
+
+
+  client:
+    build:
+         context: ./src
+         dockerfile: ./Dockerfile
+    container_name: portfolio
+    stdin_open: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+      
+    
+
+  
+    
