@@ -35,10 +35,21 @@ const handleSubmitClick = (e) => { //handle submit event.
 return (
 
 
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg"  variant="dark">
     <Container fluid>
     
-    <Navbar.Brand className='logo' ><motion.h1 initial={{y:-250}} animate={{y:0, color:'#ef8568'}} transition={{delay:1}} className='txt'>Mohammad Aman Zargar</motion.h1></Navbar.Brand>
+    <Navbar.Brand className='logo' ><motion.img 
+      initial={{y:-250,opacity:0}}
+      animate={{y:5,opacity:1}}
+      transition={{delay:1.2}}
+      src='https://drive.google.com/uc?export=view&id=1dlH43CZrs-RMqiIV3wN_D_hKfOSRNbl4'
+      className='logo'
+      width={50}
+      height={50}
+      
+      alt='...'
+      style={{ maxWidth: '24rem' }}
+    /></Navbar.Brand>
     
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
@@ -46,7 +57,7 @@ return (
       <Nav className="me-auto">
        {/* <Nav.Link href="/">About</Nav.Link> */}
        <motion.div whileHover={{y:-5,scale : 1.3}}>
-       <Nav.Link as={Link} to='/'>About</Nav.Link>
+       <Nav.Link  as={Link} to='/'  >About</Nav.Link>
        </motion.div>
        <motion.div whileHover={{y:-5,scale : 1.3}}>
        <Nav.Link as={Link} to='/Skills'>Skills</Nav.Link>

@@ -28,12 +28,21 @@ return (
 <motion.Container> 
 <Row>
 <Col>
-<motion.h1 initial={{x:-500}} animate={{x: 50 }} transition={{delay:0.5}} className='welcome'> Hello my name is Mohammad Aman Zargar.<br></br> 
+<motion.h1 initial={{x:-500}} animate={{x: 50 }} transition={{delay:0.5}} className='welcome'> Hello, Welcome to my Portfolio <br></br> 
                          </motion.h1>
-                         <motion.p  initial={{opacity:0,x:60}} animate={{opacity:1 }} transition={{delay:1}} className='about' >I am a 4th year Computer science student at the University of Saskatchewan. <br></br> 
-                       I love Music, Playing sports and travelling with friends. <br></br>
-                       My main interests in computer science are web development, AI, Machine learning, Software engineering.</motion.p>
+                         <motion.p  initial={{opacity:0,x:60}} animate={{opacity:1 }} transition={{delay:1}} className='about' >  My name is Mohammad Aman Zargar, and I am a recent graduate from the University of Saskatchewan with a degree in Computer Science. <br></br> 
+                        
+                       </motion.p>
+
+                       <motion.h2 initial={{x:-500}} animate={{x: 50 }} transition={{delay:0.5}} className='welcome'> Brief summary of my Computer Science education <br></br></motion.h2>
+                       <motion.p  initial={{opacity:0,x:60}} animate={{opacity:1 }} transition={{delay:1}} className='about' >  Throughout my studies, I have developed a strong foundation in programming, including expertise in Python, C, and object-oriented programming. I have also gained experience in data structures and algorithms, full-stack web development, mobile and cloud computing, as well as other key areas such as software engineering, human-computer interaction, and operating systems.
+
+My passion for technology has driven me to explore advanced topics such as deep learning and artificial intelligence, which I have studied in-depth during my academic career. I believe that these cutting-edge technologies have the potential to revolutionize the world, and I am excited to be part of the next generation of innovators who will bring these ideas to fruition. <br></br> 
+                        
+                        </motion.p>
+                       
                          <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.4}}>
+                         <motion.h3 initial={{x:-500}} animate={{x: 50 }} transition={{delay:0.5}} className='welcome'> Links: <br></br><br></br></motion.h3>
                          <Row>
                          <Col>
                          <li><a href='https://www.linkedin.com/in/mohammad-amaan-zargar-3758a1172/'><motion.img whileHover={{scale : 1.3}} className='Git'src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAMAAABmmnOVAAAAY1BMVEUAd7f///8AcLQAdbYmfbri6/Tf7fV+rNGLt9f2+vwAbrN6q9FSj8I9isAAcrWiwdwAarF2ps4Ufrrn8PbA1+i2zeSFstQAZa8wgbzL3exel8a30eXZ6PJpmMdrocymxt+Yu9n0n1coAAAD00lEQVR4nO2cW8OyIAyAkWkpKmmmqZX6/3/lZwcrbSQvfYIX7KIbDz0M2MYYEucuXp7Ge6JR9nGae48/J7ffLATGAXRCAHAGYfaCOLhUK8AThLqHAaJNTBDcJWnvEAeDDD3F4QqRuSYZCHGzHiKkZiFo6BBP76T4FACP5MwsAyEsJyk3DcFTEhvujb4/YrI3D6HVXahIb90p5SYV1buX8hIWRXopmSkQDml193BOVjVgYgZBUm+cN9lEiXZlAD85E2l1QwBUU4be1ertEUQPVzlpNe/JDmNwHF+jt4UowCECjQb+eMAZ+g7RFoEBiBicoNSlCtoJIRxf1wzhyPQcRFdEDGQjhsiOeiBIKZgbN9FkKqD8wuDoshSr0ISbiRkCXWMCc16DVLqsFWvFEJ0uHwaxGCLS5jyOZ+O90ZvMRgRRa4xrmMCN5lpX74B2yEbvwhn2iK3IXM2hLt9/6KIqtS89YBpV+MzAIgyo2w6ZTsfbuYYySsDcqMhPh3wbERNqeHJQliSMms5pWfldADinnDHei2J/Qv/4WMZ5kn60jGWcn+csIXFa+F3b7vxtU7JEIX8PkO4m0rw3h0X+5HJXP406sLJps1GQGFRFTP86y7HoqnrpgvmIayn4Q0dljgWIQdXwP9lcPLjqhqaAi112bmtEBmha4Sbn+g8hKhDUi54HCB6i/xHyvifwS4NURFoZ4HrYGzZPiC0OQYF/iU9v4sWyI0MZQpxUeEogS6EKcRQPhzcKyfSCIkRaSDD0wRGRolCEaL+tH9/vkwoTFSGkpZGZIktDbGR8ydIQV4tiHkIm4bM4hMxSbnkIibXc8hASC6nlIST6QwPEbtZg/QiRteklujQd+pKHnJeF2KTXgPJaJXKsxdmv+UKFXyBOyau3IRG6tKCeG5k/QOTjBSMTJutnN+jVIc7T9jFRj3RzlkId4iOHAXvBnbMbasoQ7WfzqCDamk0EKkMge2S8xm+d9WGqEBX24gS/N1hKEwU22BJ8aAYLjYkATToLZmkwF10pQuBVSiK1zRWPKELgA16UpJ5bfqiG/Gg3Q42vBOZ2mxUhChxCsOm9kCbw6jkRxEKasBAWwkJYCAthISyEhbAQFsJCWAgLYSEshIX4fxBqpQt4zlwVgjD0bMXzZAUQ9LWCBBBHW5TN77rgJ11e5SwF0rqtYPOAR1hJo0x9KW0KfyTF5b28iEaTy34RCZvGy+3kZn8rV9LIJzVMdPzURwnU1xKmmXqp1cgqDiiu4qjmKg6truL47ioOMq/iSPc6Drev4pj/Oj54sI5PP6zjIxiO4c+B/AM/001B1JuukQAAAABJRU5ErkJggg==' height={50} width={50}/></a></li>
@@ -51,15 +60,18 @@ return (
                          
       <Col>
       
-      <motion.img 
+      {/* <motion.img 
       initial={{y:-250,opacity:0}}
-      animate={{y:25,opacity:1}}
+      animate={{y:100,opacity:1}}
       transition={{delay:1.2}}
       src='https://drive.google.com/uc?export=view&id=1dlH43CZrs-RMqiIV3wN_D_hKfOSRNbl4'
       className='img-thumbnail'
+      width={250}
+      height={200}
+      
       alt='...'
       style={{ maxWidth: '24rem' }}
-    />
+    /> */}
     
       </Col>
 

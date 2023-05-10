@@ -7,8 +7,11 @@ import { About } from './components/About';
 import {Skills} from './components/Skills'
 import {Projects} from './components/Projects'
 
+
 import {AnimatedRoutes} from './AnimatedRoutes'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+
+import {DisplayProjects} from './components/DisplayProjects'
 
 
 
@@ -22,6 +25,7 @@ export default function App() {
     
      
      <Router>
+     
      <Navi/>
      <AnimatedRoutes/>
      </Router>

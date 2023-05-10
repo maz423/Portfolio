@@ -1,24 +1,41 @@
 .Projects-txt{
-    color: white;
+    color: rgb(7, 6, 6);
     text-align: left;
     margin-left: 2%;
     font-size: x-large;
 
 }
 
-.imgs{
-    
+.page{
+    background-color: rgb(246, 248, 250);
 }
 
+
 .font-Roman{
-    font-family:'Times New Roman', Times, serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 
 }
 
 .corousel-div{
-    background-color: black;
-    opacity: 0.6;
+    background-color: rgb(11, 11, 11);
+    opacity: 1;
     
 
+}
+
+.skill-div{
+    background-color: rgb(250, 248, 248);
+    opacity: 1;
+}
+
+.cor-img-div{
+    background-color: rgb(7, 7, 7);
+    border-radius: 30px;
+    margin-right: 4%;
+    
+    
+    
+    
+    
 }

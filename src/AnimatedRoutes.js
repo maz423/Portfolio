@@ -16,6 +16,8 @@ import {Projects} from './components/Projects'
 import { About } from './components/About';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import {AnimatePresence} from 'framer-motion'
+import {DisplayProjects} from './components/DisplayProjects'
+
 
 
 
@@ -31,7 +33,7 @@ return (
 
 <Route exact path='/' element={<About/>}/>
 <Route exact path='/Skills' element={<Skills/>}/>
-<Route exact path='/Projects' element={<Projects/>}/>
+<Route exact path='/Projects' element={<DisplayProjects/>}/>
 
 </Routes>
 
