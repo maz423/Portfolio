@@ -59,9 +59,9 @@ return (
        <motion.div whileHover={{y:-5,scale : 1.3}}>
        <Nav.Link  as={Link} to='/'  >About</Nav.Link>
        </motion.div>
-       <motion.div whileHover={{y:-5,scale : 1.3}}>
-       <Nav.Link as={Link} to='/Skills'>Skills</Nav.Link>
-       </motion.div>
+//        <motion.div whileHover={{y:-5,scale : 1.3}}>
+//        <Nav.Link as={Link} to='/Skills'>Skills</Nav.Link>
+//        </motion.div>
        <motion.div whileHover={{y:-5,scale : 1.3}}>
        <Nav.Link as={Link} to='/Projects'>Projects</Nav.Link>
        </motion.div>
