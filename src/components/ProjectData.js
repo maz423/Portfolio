@@ -51,7 +51,7 @@ export const ProjectData = [
 
     {
         title: "Target Trainer app",
-        description: "Description of Project 2",
+        description: "Designed and developed a graphical editor in JavaFX to enable users to create and practice 2D targeting with custom targets. The editor includes features such as target creation, deletion, resizing, and selection, as well as undo/redo capabilities. Additionally, the editor allows for clipboard operations and cut/copy/paste functionalities. As part of the project, successfully deployed and implemented logging for the target practice sessions",
         githubLink: "https://drive.google.com/uc?export=view&id=1vKu7jWTQOZk79nJFLifgLRsbBKw7mSyF",
         youtubeLink: "https://youtube.com/watch?v=yourvideo2",
         date: "2023-05-02",
