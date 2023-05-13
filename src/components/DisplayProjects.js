@@ -35,6 +35,7 @@ export const DisplayProjects = (props) => {
           description={project.description}
           pictures={project.pictures}
           captions={project.captions}
+          Git={project.githubLink}
           // Pass other project data as props as needed
         />
       ))}

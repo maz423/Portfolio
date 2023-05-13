@@ -35,7 +35,7 @@ export const ProjectData = [
     {
         title: "Diet Genie",
         description: "This project involved ideating and developing a mobile app to solve a problem, which was to provide users with recipe options based on their dietary restrictions. The project was carried out in stages, including brainstorming the app idea, sketching possible interfaces, refining the system using heuristic evaluation, creating a refined medium fidelity prototype in Figma, and testing the prototype with potential users to suggest future improvements. Through this project, I demonstrated a sound understanding of UI/UX concepts and the ability to ideate, design, and test a functional app. ",
-        githubLink: "https://github.com/yourusername/project2",
+        githubLink: "https://www.figma.com/proto/dC8aZHMhBX7M7EuB1pyyfN/Milestone-III?node-id=0%3A1",
         youtubeLink: "https://youtube.com/watch?v=yourvideo2",
         date: "2023-05-02",
         pictures: [
@@ -50,9 +50,9 @@ export const ProjectData = [
 
 
     {
-        title: "https://github.com/maz423/Target-Training-App",
+        title: "Target Training App",
         description: "Designed and developed a graphical editor in JavaFX to enable users to create and practice 2D targeting with custom targets. The editor includes features such as target creation, deletion, resizing, and selection, as well as undo/redo capabilities. Additionally, the editor allows for clipboard operations and cut/copy/paste functionalities. As part of the project, successfully deployed and implemented logging for the target practice sessions",
-        githubLink: "https://drive.google.com/uc?export=view&id=1vKu7jWTQOZk79nJFLifgLRsbBKw7mSyF",
+        githubLink: "https://github.com/maz423/Target-Training-App",
         youtubeLink: "https://youtube.com/watch?v=yourvideo2",
         date: "2023-05-02",
         pictures: [
