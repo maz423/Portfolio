@@ -1,4 +1,4 @@
-import './About.css'
+import './DisplayProjects.css'
 import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
@@ -14,6 +14,10 @@ import { useState } from 'react';
 import {motion} from 'framer-motion'
 import { Projects } from './Projects';
 import {ProjectData} from './ProjectData';
+import Dropdown from 'react-bootstrap/Dropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
+
 
 
 
@@ -21,6 +25,10 @@ import {ProjectData} from './ProjectData';
 
 
 export const DisplayProjects = (props) => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
     
 
@@ -28,6 +36,33 @@ export const DisplayProjects = (props) => {
     
        
     <section>
+      
+      {/* <div style={{ textAlign: 'right' }}>
+      <Button className="Sort" variant="danger" onClick={handleShow}>
+        Filter Projects
+      </Button>
+    </div>
+
+      <Offcanvas show={show} onHide={handleClose} placement="end">
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title> Filter by</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas> */}
+    {/* <Dropdown className='Sort'>
+      <Dropdown.Toggle variant="dark" id="dropdown-basic">
+        Sort by Tech Stack
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1">Java</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Python</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">C++</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown> */}
 
     {ProjectData.map((project) => (
         <Projects
