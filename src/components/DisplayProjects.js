@@ -1,83 +1,196 @@
 import './DisplayProjects.css'
 import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import { Link } from 'react-router-dom';
-import { Nav } from 'react-bootstrap';
-import { Navbar } from 'react-bootstrap';
-import { NavDropdown } from 'react-bootstrap';
-import { Container } from 'react-bootstrap';
-import { Modal } from 'react-bootstrap';
-import { useState } from 'react';
-import {motion} from 'framer-motion'
+import { useState,useEffect } from 'react';
 import { Projects } from './Projects';
 import {ProjectData} from './ProjectData';
-import Dropdown from 'react-bootstrap/Dropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Form, FormControl } from 'react-bootstrap';
+import { InputGroup } from 'react-bootstrap';
 
-
-
+import './Skills.css';
 
 
 
 
 
 export const DisplayProjects = (props) => {
+  const [sorted,setSorted] = useState([]);
+  const [data,setData]  = useState([]);
   const [show, setShow] = useState(false);
-
+  const availableTechnologies = ['Java', 'Docker', 'Python', "GUI" , "MVC","OOP", "UI/UX", "ReactJs","JavaScript","npm", "HTML/CSS","Bootstrap","Muti-thrading", "Sockets", "TCP"];
+  const availableTimeOptions = ['Latest to Oldest', 'Oldest to Newest'];
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [selectedTechnologies, setSelectedTechnologies] = useState([]);
+  const [selectedTime, setSelectedTime] = useState('');
+  
 
-    
+useEffect(() => {
+    if(selectedTechnologies.length == 0 ){
+      setData(ProjectData);
+      }
+  
 
-    return (
+  }, []);
+
+  useEffect(() => {
+   
+    setSorted(data.sort((a, b) => new Date(b.date) - new Date(a.date)));
+
+
+  }, [data]);
+
+
+ 
+
+
+
+
+
+
+  const handleTechnologyChange = (event) => {
+    const { checked, nextSibling } = event.target;
+    const label = nextSibling.textContent;
     
-       
-    <section>
+    if (checked) {
+      setSelectedTechnologies((prevSelected) => [...prevSelected, label]);
+     
       
-      {/* <div style={{ textAlign: 'right' }}>
-      <Button className="Sort" variant="danger" onClick={handleShow}>
-        Filter Projects
-      </Button>
+    } else {
+      setSelectedTechnologies((prevSelected) =>
+        prevSelected.filter((tech) => tech !== label)
+      );
+      
+    }
+  };
+
+
+  const handleTimeChange = (event) => {
+    setSelectedTime(event.target.nextSibling.textContent);
+  };
+
+
+  const handleApplyClick = () => {
+    // Handle the selected options here
+
+    console.log('Selected Technologies:', selectedTechnologies);
+    console.log('Selected Time:', selectedTime);
+
+    if(selectedTechnologies.length == 0){
+      setData(ProjectData);
+    }
+
+    else{
+
+      var temp = [];
+
+      selectedTechnologies.forEach(selectedtech => {
+        ProjectData.forEach(element => {
+          element.Tech.forEach(tech => {
+            if (tech === selectedtech && !temp.includes(element)) {
+              temp.push(element);
+            }
+          });
+        });
+      });
+      
+      setData(temp);
+      }
+  
+  };
+
+  const handleReset = () => {
+    setSelectedTechnologies([]);
+    setSelectedTime([]);
+    setData(ProjectData);
+  };
+
+
+return (
+    
+      
+<section className='Display'>
+
+<h1></h1>
+
+<div className='Sort' style={{ display: 'flex', justifyContent: 'center', flexDirection:"column", marginLeft: "100px",marginRight:"100px",marginTop:"30px" }}>
+
+<Button  variant="success" onClick={handleShow}  >
+  Filter Projects
+</Button>
+
+</div>
+      
+      
+
+<Offcanvas show={show} onHide={handleClose} placement="end">
+  <Offcanvas.Header closeButton>
+    <Offcanvas.Title style={{ fontWeight: 'bold'  }}> Filter by</Offcanvas.Title>
+  </Offcanvas.Header>
+<Offcanvas.Body>
+
+  <Form style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap: '10px', maxWidth: '400px' }}>
+  <p style={{ gridColumn: '1 / -1', fontWeight: 'bold' }}>By Technology:</p>
+  {availableTechnologies.map((technology) => (
+    <div key={technology} className="mb-3">
+      <Form.Check
+        label={technology}
+        name="group1"
+        checked={selectedTechnologies.includes(technology)}
+        onChange={handleTechnologyChange}
+        type="checkbox"
+        style={{ gridColumn: '1 / -1' }}
+      />
     </div>
+  ))}
+   </Form>
 
-      <Offcanvas show={show} onHide={handleClose} placement="end">
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title> Filter by</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-        </Offcanvas.Body>
-      </Offcanvas> */}
-    {/* <Dropdown className='Sort'>
-      <Dropdown.Toggle variant="dark" id="dropdown-basic">
-        Sort by Tech Stack
-      </Dropdown.Toggle>
-
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Java</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Python</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">C++</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown> */}
-
-    {ProjectData.map((project) => (
+  {/* <Form>
+   <p style={{ fontWeight: 'bold' }}>By Time:</p>
+   {availableTimeOptions.map((option) => (
+    <div className="mb-3">
+      <Form.Check
+        label={option}
+        name="group1"
+        checked={selectedTime === option}
+        onChange={handleTimeChange}
+        type="radio"
+      />
+    </div>
+  ))}
+  </Form> */}
+        
+            
+<div style={{ textAlign: 'center' }}>
+      
+      <Button  variant="success" onClick={handleApplyClick}>
+        Apply
+      </Button>&nbsp;
+      <Button  variant="danger" onClick={handleReset}>
+        Reset filters
+      </Button>
+</div>
+ </Offcanvas.Body>
+</Offcanvas>
+     
+    {sorted.length == 0 ? <h1>if:{data.length}</h1>:   
+    <div>
+    {data.map((project) => (
         <Projects
           title={project.title}
           description={project.description}
           pictures={project.pictures}
           captions={project.captions}
           Git={project.githubLink}
+          date={project.date}
+          tech={project.Tech}
           // Pass other project data as props as needed
         />
-      ))}
+      ))}</div>}
     
-    
-    
-    </section>
+  
+</section>
     
     
     );

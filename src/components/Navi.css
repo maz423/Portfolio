@@ -27,23 +27,23 @@
 
   .navbar .nav-link[href="/"] {
     font-size: 16px;
-    font-style: oblique;
+    color: rgb(250, 246, 246);
     font-weight: bold;
   }
   .navbar .nav-link[href="/Skills"] {
     font-size: 16px;
-    font-style: oblique;
+    color: rgb(250, 246, 246);
     font-weight: bold;
   }
   .navbar .nav-link[href="/Projects"] {
     font-size: 16px;
-    font-style: oblique;
+    color: rgb(250, 246, 246);
     font-weight: bold;
     
   }
   .navbar .nav-link[href="#memes"] {
     font-size: 16px;
-    font-style: oblique;
+    color: rgb(250, 246, 246);
     font-weight: bold;
     
   }

@@ -20,6 +20,7 @@ import projectData from './ProjectData';
 
 
 
+
 export const Projects = (props) => {
 
 
@@ -40,10 +41,11 @@ className='skill-div'
    
 <Row>
 
-<h1 className='skill-head' > {props.title} </h1>   
+<Row><Col><h1 className='skill-head' > {props.title} </h1></Col> <Col><p style={{ fontWeight: 'bold' , marginTop:"10px" }}> Date: {props.date} </p></Col></Row>
 
 
-<Col><p className='skills'> {props.description}</p>
+<Col><p className='skills'> {props.description}
+</p > 
 <Row>
   {props.title == "Diet Genie" ? <div><motion.p animate={{x:50}} className='small-txt' > Links : <br></br><br></br><li ><a href={props.Git}><motion.img whileHover={{scale : 1.3}} className='Git' src='https://miro.medium.com/v2/resize:fit:720/format:webp/1*UBZYjKJigowCJOK4SaHicw.jpeg' height={50} width={50} /></a></li>
 </motion.p>
@@ -58,6 +60,7 @@ className='skill-div'
 </motion.p>
 <motion.p className='small-txt' initial={{x:-1000}} animate={{x: 200, y:-45 }} transition={{delay:0.4}}> Comming soon</motion.p>
 </Row>
+<p className='skills' style={{ textAlign: 'left', marginLeft:"10px", fontSize:"Meduim" }}> <strong><span style={{ color: "#0b6fea" }}>Technologies used:</span></strong> {props.tech.join(", ")}</p>
 </Col>
 
 
