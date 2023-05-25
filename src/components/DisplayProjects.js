@@ -7,7 +7,6 @@ import {ProjectData} from './ProjectData';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Form, FormControl } from 'react-bootstrap';
 import { InputGroup } from 'react-bootstrap';
-
 import './Skills.css';
 
 
@@ -114,13 +113,12 @@ return (
 
 <h1></h1>
 
-<div className='Sort' style={{ display: 'flex', justifyContent: 'center', flexDirection:"column", marginLeft: "100px",marginRight:"100px",marginTop:"30px" }}>
-
-<Button  variant="success" onClick={handleShow}  >
-  Filter Projects
-</Button>
-
+<div  style={{ display: "flex", justifyContent: "flex-end", marginRight:"10px" }}>
+  <Button variant="danger" onClick={handleShow}>
+    Filter Projects
+  </Button>
 </div>
+
       
       
 
