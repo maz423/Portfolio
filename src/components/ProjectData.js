@@ -9,10 +9,10 @@ export const ProjectData = [
       date: "2022-03-01",
     
       pictures: [
-        "https://drive.google.com/uc?export=view&id=1meZF5I-NWwO_NbLz3BStYZUoHpt9eOQy",
-        "https://drive.google.com/uc?export=view&id=1YovSFusdHr7JbCrUsssZGhx7cXBGCxIF",
-        "https://drive.google.com/uc?export=view&id=14KTb_8P3_-6OmBRZbYoPBLlTH0PMUdyE",
-        // Add more image filenames as needed
+        "https://drive.google.com/thumbnail?id=1meZF5I-NWwO_NbLz3BStYZUoHpt9eOQy&sz=w1000",
+        "https://drive.google.com/thumbnail?id=1YovSFusdHr7JbCrUsssZGhx7cXBGCxIF&sz=w1000",
+        "https://drive.google.com/thumbnail?id=14KTb_8P3_-6OmBRZbYoPBLlTH0PMUdyE&sz=w1000",
+        // Add more image IDs as needed
       ],
       captions: ["",
     ""],
@@ -25,10 +25,9 @@ export const ProjectData = [
       youtubeLink: "https://youtube.com/watch?v=yourvideo2",
       date: "2023-03-02",
       pictures: [
-        "https://drive.google.com/uc?export=view&id=1qhbETc_t63wL1UlR1tNnOc02HSy6vKBM",
-        "https://drive.google.com/uc?export=view&id=1fZ6TYdzv0S89sGloZxahMxDX2_zIwstt",
-        
-        
+        "https://drive.google.com/thumbnail?id=1qhbETc_t63wL1UlR1tNnOc02HSy6vKBM&sz=w1000",
+        "https://drive.google.com/thumbnail?id=1fZ6TYdzv0S89sGloZxahMxDX2_zIwstt&sz=w1000",
+        // Add more image IDs as needed
       ],
       captions: ["",
     ""],
@@ -42,10 +41,10 @@ export const ProjectData = [
         youtubeLink: "https://youtube.com/watch?v=yourvideo2",
         date: "2023-05-02",
         pictures: [
-          "https://drive.google.com/uc?export=view&id=1DEAyBzSt5AYamMJiwQzAbAgHZ6gSJJhP",
-          "https://drive.google.com/uc?export=view&id=1mpydDoiJDK78DzcvV4DxzY07XSqBqA5P",
-          "https://drive.google.com/uc?export=view&id=12xDi0aty1altbHCWIyvHg3S0Xux501PM",
-          // Add more image filenames as needed
+          "https://drive.google.com/thumbnail?id=1DEAyBzSt5AYamMJiwQzAbAgHZ6gSJJhP&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1mpydDoiJDK78DzcvV4DxzY07XSqBqA5P&sz=w1000",
+          "https://drive.google.com/thumbnail?id=12xDi0aty1altbHCWIyvHg3S0Xux501PM&sz=w1000",
+          // Add more image IDs as needed
         ],
         captions: ["",
       ""],
@@ -60,9 +59,9 @@ export const ProjectData = [
         youtubeLink: "https://youtube.com/watch?v=yourvideo2",
         date: "2023-03-15",
         pictures: [
-          "https://drive.google.com/uc?export=view&id=1vKu7jWTQOZk79nJFLifgLRsbBKw7mSyF",
-          "https://drive.google.com/uc?export=view&id=1vd-TW5zkiUOa2LiK-3xhBlUJueeiua1q",
-          // Add more image filenames as needed
+          "https://drive.google.com/thumbnail?id=1vKu7jWTQOZk79nJFLifgLRsbBKw7mSyF&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1vd-TW5zkiUOa2LiK-3xhBlUJueeiua1q&sz=w1000",
+          // Add more image IDs as needed
         ],
         captions: ["",
       ""],
@@ -75,7 +74,8 @@ export const ProjectData = [
         githubLink: "https://github.com/maz423/ChatApp-REST-VS-SOAP-",
         youtubeLink: "https://youtube.com/watch?v=yourvideo2",
         date: "2023-01-02",
-        pictures: ["https://drive.google.com/uc?export=view&id=1X0UBY5OQq5TZ-rsuwy7ogaOEWvU5btKx"
+        pictures: [
+          "https://drive.google.com/thumbnail?id=1X0UBY5OQq5TZ-rsuwy7ogaOEWvU5btKx&sz=w1000",
         ],
         captions: ["",
       ""],
@@ -89,10 +89,10 @@ export const ProjectData = [
         youtubeLink: "https://youtube.com/watch?v=yourvideo2",
         date: "2021-10-01",
         pictures: [
-          "https://drive.google.com/uc?export=view&id=1b2CdmY_luX6SpWyg4mQ3VVQGF1eUUV1V",
-          "https://drive.google.com/uc?export=view&id=1hlqIjaORxwHUYfmA2N6s2qAGCPoc9vto",
-          "https://drive.google.com/uc?export=view&id=1FBF1Ali1HnbeF_HoZYymrA2cXVSLgvgy"
-          // Add more image filenames as needed
+          "https://drive.google.com/thumbnail?id=1b2CdmY_luX6SpWyg4mQ3VVQGF1eUUV1V&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1hlqIjaORxwHUYfmA2N6s2qAGCPoc9vto&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1FBF1Ali1HnbeF_HoZYymrA2cXVSLgvgy&sz=w1000",
+          // Add more image IDs as needed
         ],
         captions: ["",
       ""],
@@ -105,11 +105,11 @@ export const ProjectData = [
         githubLink: "https://github.com/maz423/Chatapp-Java",
         youtubeLink: "https://youtube.com/watch?v=yourvideo2",
         date: "2023-05-02",
-        pictures: ["https://drive.google.com/uc?export=view&id=1EhI22-CRV2YiOndBjEXhIepeMWhahQr4",
-        "https://drive.google.com/uc?export=view&id=1XQD4_4P4poHwACd9F7tIqsVVSuK2llme",
-        "https://drive.google.com/uc?export=view&id=1Cnl-mIx5WIYvHmEBtavc1XTw1z0dx7iq",
-      
-          
+        pictures: [
+          "https://drive.google.com/thumbnail?id=1EhI22-CRV2YiOndBjEXhIepeMWhahQr4&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1XQD4_4P4poHwACd9F7tIqsVVSuK2llme&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1Cnl-mIx5WIYvHmEBtavc1XTw1z0dx7iq&sz=w1000",
+          // Add more image IDs as needed
         ],
         captions: ["",
       ""],
@@ -123,9 +123,9 @@ export const ProjectData = [
         youtubeLink: "https://youtube.com/watch?v=yourvideo2",
         date: "2023-05-20",
         pictures: [
-          "https://drive.google.com/uc?export=view&id=15RL28FXrBVej2Y1CDY_4llPZ-4rixSbN",
-          "https://drive.google.com/uc?export=view&id=1bmBtke2MPa2Q8Ux_0A3QjoW6Jo_UwrVB",
-          // Add more image filenames as needed
+          "https://drive.google.com/thumbnail?id=15RL28FXrBVej2Y1CDY_4llPZ-4rixSbN&sz=w1000",
+          "https://drive.google.com/thumbnail?id=1bmBtke2MPa2Q8Ux_0A3QjoW6Jo_UwrVB&sz=w1000",
+          // Add more image IDs as needed
         ],
         captions: ["",
       ""],

@@ -42,7 +42,9 @@ return (
       initial={{y:-250,opacity:0}}
       animate={{y:5,opacity:1}}
       transition={{delay:1.2}}
-      src='https://drive.google.com/uc?export=view&id=1dlH43CZrs-RMqiIV3wN_D_hKfOSRNbl4'
+      
+      src='https://drive.google.com/thumbnail?id=1dlH43CZrs-RMqiIV3wN_D_hKfOSRNbl4&sz=w1000" alt=""/'
+      
       className='logo'
       width={50}
       height={50}
